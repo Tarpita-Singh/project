@@ -314,7 +314,7 @@ function print_Cross_Circle(){
 
 function heading(){
     ctx.beginPath();
-    ctx.strokeStyle='#1589FF';
+    ctx.strokeStyle='#ffc0cb';
     ctx.font = "50px Ubuntu";
     ctx.strokeText("TIC - TAC - TOE", center.x - 170, center.y - 250);
     ctx.closePath();
@@ -329,7 +329,7 @@ function instructions(){
 
 function printWin(){
     ctx.beginPath();
-    ctx.fillStyle='#FFFF00';
+    ctx.fillStyle='#99ff33';
     ctx.font = "40px Ubuntu";
     ctx.fillText(winning, center.x - 155, center.y + 250);
     ctx.closePath();
@@ -345,8 +345,8 @@ function animate(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawParticles();
     drawTicTac();
-    drawCursor(mouse.x, mouse.y);
     heading();
+    drawCursor(mouse.x, mouse.y);
     instructions();
     print_Cross_Circle();
     requestAnimationFrame(animate);

@@ -79,7 +79,7 @@
     top: 15px;
     right: 35px;
     transition: 0.3s;
-    background: url('cross4.png');
+    background: url('./images/cross4.png');
     background-size: cover;
     border-radius: 50%;
     border: none;
@@ -87,7 +87,7 @@
   
 .close:hover{
     cursor: pointer;
-    background: url('cross6.png');
+    background: url('./images/cross6.png');
     background-size: cover;
 }
   

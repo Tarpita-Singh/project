@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="cube.png">
+    <link rel="icon" type="image/png" href="./images/cube.png">
 
     <link rel="stylesheet" href="project.css">
     
@@ -24,30 +26,31 @@
     
     <div class="topBar" id="topBarid">
         <a id="current" href="#intro">HOME</a>
-        <a id="current" href="#about">ABOUT</a>
+        <a id="current" href="#text2">ABOUT</a>
         <div class="dropdown">
-            <button class="dropbtn" id="current" >PROJECTS
-                <i class="fa fa-caret-down"></i>
-            </button>
+            <button class="dropbtn" id="current">PROJECTS</button>
             <div class="dropdown-content">
-                <a href="#project1"> Project 1</a>
+                <a href="#project"> tic-tac-toe</a>
                 <a href="#project2"> Project 2</a>
                 <a href="#project3"> Project 3</a>
             </div>
         </div>
-        <a id="current" href="#contact" class="last">CONTACT</a>
+        <a id="current" href="#about5" class="last">CONTACT</a>
+        <button style="font-size:24px" class="icon" onclick="responsiveBar()"> <i class="fa fa-bars"></i></button>
     </div>
     
     <div class="wave4"></div>
 
-    <section class="home">
-        <h1>Hello World!</h1>
-        <p> something - something</p>
+    <section class="home" id="intro">
+        <h1>Hi I'm Tarpita</h1>
+        <p id="p"> A computer science student passionate about programming and design. </p>
     </section>
 
     <section class="hidden"  id="text2">
-        <h1 id="secondh1">Something Else</h1>
-        <p id="secondp"> something - something - something - something</p>
+        <!-- <p id ="about"> lorem </p> -->
+        <h1 id="secondh1">About Me</h1>
+        <img id="pfp" src="./images/pfp.png" alt="Profile Picture">
+        <p id="secondp"> My name is Tarpita Singh. I'm a first year Btech student at IIIT Surat, Computer Science Department.  I like to draw. I believe it is a great way to improve your creative skills and start thinking in a different way, which can be helpful for personal development and solving problems. My other hobbies include running, playing badminton and reading novels. <br> <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate aperiam voluptatum nihil ut id quod suscipit, adipisci illum. Expedita ab numquam ut nostrum aspernatur officia quae ullam optio, aut ipsum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore deleniti dolor nobis magni, tenetur libero aperiam sit similique quae odio, quidem, fugit neque tempore veritatis in alias illum quo? Similique.</p>
     </section>
 
     <div class="wave8"></div>
@@ -66,22 +69,22 @@
             <h2>DD</h2>
         </div>
     </div>
-
-    <div class="game">
-        <h3>TIC-TAC-TOE</h3>
-        <p class="p1">Press this button to play a wHaCkY game => </p>
+    <div class="game" id="project">
+        <!-- <p id ="about"> lorem </p> -->
+        <h3>TIC - TAC - TOE</h3>
+        <p class="p1" id="p">Press this button to play a wHaCkY game  => </p>
         <button onclick="window.location.href='game.html'">Let's Go!</button>
     </div>
 
 
     <section class="animated-grid">
-        <div class="box">1</div>
+        <div class="box" onClick="window.location.reload(true)" style="color: blue; font-weight: 800;">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
         <div class="box">4</div>
         <div class="box">5</div>
         <div class="box">6</div>
-        <div class="box" onClick="window.location.reload(true)">7</div>
+        <div class="box">7</div>
         <div class="box">8</div>
         <div class="box">9</div>
         <div class="box">10</div>
@@ -97,15 +100,29 @@
         <div class="box">20</div>
     </section>
 
-    <div class="wave14"></div>
+    <div class="wave14"  id ="about5"></div>
 
-    <section class="hidden3" id="text3">
+    <section class="contact">
+        <p style="opacity: 0;"> lorem </p>
+        <h1>Contact Me</h1>
+        <p id="p">Feel free to get in touch!</p>
+    </section>
+    <section class="hidden4" id="text4">
+        <p id="p5"> <img src="./images/contact2.png" alt="phone" style="width: 50px; height: auto;"> PHONE<br><br> <a onclick="link()"> +91 1234567890 </a></p>
+        <p id="p6"><img src="./images/mail.png" alt="mail" style="width: 65px; height: auto;"> EMAIL <br><br><a onclick="link()">&lt;fakemail&gt;@iiitsurat.ac.in </a>  </p>
+    </section>
+    <!-- <div class="blob"></div> -->
+    <section  class="hidden3" id="text3">
         <h1>Thank You For Visiting!</h1> 
-        <p>Hope you have a great day ahead  ^_^</p>
+        <p id="p">Hope you have a great day ahead  ^_^</p>
     </section>
     
+    <footer>
+        <p id="footer2">Copyright 2023 Tarpita Singh. All Rights Reserved.</p>
+    </footer>
+    
     <div class="backToTop">
-        <a href="#"> <img src="arrow3.png"> </a>
+        <a href="#"> <img src="./images/arrow3.png" alt="up-arrow"> </a>
     </div>
 
     

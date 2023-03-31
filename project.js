@@ -1,4 +1,8 @@
 
+function link() {
+    alert("There is no link.");
+}
+
 var done1=0;
 text2 = document.getElementById("text2");
 function forText2(){
@@ -18,11 +22,25 @@ text3 = document.getElementById("text3");
 function forText3(){
     var y = window.scrollY;
     if(done3==0){
-        if (y > 4000) {
+        if (y > 4700) {
             text3.className = "show3";
             done3=1;
         } else {
             text3.className = "hidden3";
+        }
+    }
+};
+
+var done4=0;
+text4 = document.getElementById("text4");
+function forText4(){
+    var y = window.scrollY;
+    if(done4==0){
+        if (y > 3900) {
+            text4.className = "show4";
+            done4=1;
+        } else {
+            text4.className = "hidden4";
         }
     }
 };
@@ -32,6 +50,7 @@ function forText3(){
 window.addEventListener("scroll", function(e){
     forText2();
     forText3();
+    forText4();
 });
 
 
@@ -52,3 +71,15 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.logo');
 hiddenElements.forEach((e) => observer.observe(e));
+
+
+function responsiveBar() {
+    var x = document.getElementById("topBarid");
+    if (x.className === "icon") {
+      x.className += " responsive";
+    } else {
+      x.className = "icon";
+    }
+}
+
+
