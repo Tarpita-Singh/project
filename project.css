@@ -513,7 +513,7 @@ h2{
 }
 .show3{
     margin-top: 550px;
-    margin-bottom: -560px;
+    margin-bottom: -600px;
     display: grid;
     place-items: center;
     align-content: center;
@@ -521,8 +521,8 @@ h2{
 }
 
 .contact{
-    margin-top: 750px;
-    padding-bottom: 100px;
+    margin-top: 850px;
+    padding-bottom: 50px;
 }
 
 
@@ -684,7 +684,7 @@ footer{
     /* background-color: #b3b2b2; */
     background-image: linear-gradient(#001220, #b3b2b2);
     bottom: 0;
-    margin-top: +800px;
+    margin-top: +200px;
     margin-bottom: -1000px;
 }
 
@@ -693,4 +693,18 @@ footer{
     font-family:'Ubuntu', sans-serif;
     text-align: left;
     font-weight: bold;
+}
+
+.gitlink{
+    margin-top: 790px;
+	text-align : center;
+/* 	border: 2px black solid; */
+    width : 250px;
+    border-radius: 30px;
+    font-family : monospace;
+    margin-left : 500px;
+    background-color : #b4a9a896;
+    color : black;
+    font-size: 15px;
+    padding: 5px;
 }

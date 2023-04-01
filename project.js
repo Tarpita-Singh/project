@@ -36,7 +36,7 @@ text4 = document.getElementById("text4");
 function forText4(){
     var y = window.scrollY;
     if(done4==0){
-        if (y > 3900) {
+        if (y > 4000) {
             text4.className = "show4";
             done4=1;
         } else {
